@@ -25,31 +25,6 @@ try {
 }
 
 
-//     // if (userCreated) {
-//     //     let transporter = nodemailer.createTransport({
-//     //         service: "gmail",
-//     //         auth: {
-//     //             user: "aman.free00628@gmail.com",
-//     //             pass: process.env.MYPASS
-//     //         },
-//     //     });
-//     //     let info = await transporter.sendMail({
-//     //         from: 'aman.free00628@gmail.com',
-//     //         to: email,
-//     //         subject: "Verification mail by aman kumar for testing api",
-//     //         text: `Message: Please click on given link for successfull verification,
-//     //                Link - http://localhost:3000/yourverification?email=${email}`,
-//     //     });
-//     // if (info) {
-//     //     return res.status(200).send({ status: true, message: "We have sent a verification link to your given email address ,Please click on that link for succcessful registration" })
-//     // }
-//     return res
-//       .status(201)
-//       .send({ status: true, message: "Created", data: userCreated });
-//   } catch (err) {
-//     res.status(500).send(err.message);
-//   }
-// };
 
 const loginUser = async (req, res) => {
   try {
